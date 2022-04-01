@@ -10,7 +10,7 @@ $array2 = ['chicken', 'pig', 'cow', 'sheep', 'goat', 'horse', 'lion'];
 $array3 = ['car', 'bus', 'train', 'plane', 'boat', 'ship', 'submarine'];
 
 
-$mixed = array_interlace($array1, $array2, $array3);
+array_interlace($array1, $array2, $array3);
 ```
 
 Result:
@@ -39,3 +39,6 @@ array:20 [▼
   19 => "submarine"
 ]
 ```
+
+The function will return false if there are no arguments or any of the arguments is not an array.
+If there is only one argument, it will be returned unchanged.
